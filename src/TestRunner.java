@@ -12,6 +12,9 @@ public class TestRunner {
 		// ADD ANY CLASSES YOU WISH TO TEST HERE
 		
 		classesToTest.add(CellTest.class);
+		
+		// Had issues with this one... could not remember the junit formatting properly.
+		//classesToTest.add(MainPanelTest.class);
 
 		// For all test classes added, loop through and use JUnit
 		// to run them.

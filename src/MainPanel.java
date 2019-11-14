@@ -30,8 +30,14 @@ public class MainPanel extends JPanel {
 		return _cells;
 	}
 
+	
+	/*
+	 * This padding does... nothing.
+	 * Why convertToInt when it is already an int...
+	 * Pretty confident all of this is not necessary. Just return the parameter back.
+	 */
 	private int convertToInt(int x) {
-		int c = 0;
+		/*int c = 0;
 		String padding = "0";
 		while (c < _r) {
 			String l = new String("0");
@@ -41,7 +47,9 @@ public class MainPanel extends JPanel {
 
 		String n = padding + String.valueOf(x);
 		int q = Integer.parseInt(n);
-		return q;
+		return q;*/
+		
+		return x;
 	}
 
 	private int getNumNeighbors(int x, int y) {

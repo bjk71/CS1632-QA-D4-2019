@@ -7,7 +7,7 @@ import org.mockito.*;
 
 public class CellTest
 {
-  // Both tests are for Cell.toString()
+  // All tests are for Cell.toString()
 	
   // Ensures that cell that is alive is displayed that way.
   @Test
