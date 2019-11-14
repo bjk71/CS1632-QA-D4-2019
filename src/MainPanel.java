@@ -37,7 +37,8 @@ public class MainPanel extends JPanel {
 	 * Pretty confident all of this is not necessary. Just return the parameter back.
 	 */
 	private int convertToInt(int x) {
-		/*int c = 0;
+		/*
+		int c = 0;
 		String padding = "0";
 		while (c < _r) {
 			String l = new String("0");
@@ -47,7 +48,8 @@ public class MainPanel extends JPanel {
 
 		String n = padding + String.valueOf(x);
 		int q = Integer.parseInt(n);
-		return q;*/
+		return q;
+		*/
 		
 		return x;
 	}
@@ -245,20 +247,26 @@ public class MainPanel extends JPanel {
 	 * Run the system continuously.
 	 */
 
+	// Takes a lot of time
+	// What does the origR do?
+	// Think it just takes up time.
 	public void runContinuous() {
 		_running = true;
 		while (_running) {
 			System.out.println("Running...");
-			int origR = _r;
+			//int origR = _r;
 			try {
 				Thread.sleep(20);
 			} catch (InterruptedException iex) {
 			}
+			//this part is a useless loop?
+			/*
 			for (int j = 0; j < _maxCount; j++) {
 				_r += (j % _size) % _maxCount;
 				_r += _maxCount;
 			}
 			_r = origR;
+			*/
 			backup();
 			calculateNextIteration();
 		}
